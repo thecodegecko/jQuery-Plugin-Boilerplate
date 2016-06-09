@@ -48,7 +48,7 @@
 			if (!$.data(this, pluginName + '_instance'))
 			{
 				// create and save the plugin instance
-				$.data(this, pluginName + '_instance', new Plugin(this, args));
+				$.data(this, pluginName + '_instance', new Plugin(this, args[0]));
 			}
 			// if public functions are needed, use this block aswell.
 			// those functions can then be called by $('selector').pluginName('functionName', ...args)
